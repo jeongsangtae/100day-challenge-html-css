@@ -6,13 +6,48 @@ header {
   position: static;
 }
 
+main ul {
+  width: 800px;
+  margin: 0 auto;
+}
+
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
 main li img {
   width: 300px;
   height: 280px;
+  object-fit: cover;
 }
 
-main li a {
-  background-color: yellow;
-  padding: 15px;
-  border-radius: 8px;
+.item-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-content p {
+  margin: 0;
+}
+
+.actions {
+  position: relative;
+  top: 80px;
+  left: 380px;
+}
+
+.actions a {
+  text-decoration: none;
+  color: rgb(77, 190, 250);
+}
+
+.actions a:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 6px;
+  padding: 4px;
 }
